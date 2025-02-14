@@ -5,7 +5,7 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 
-require_once 'configuracion/conexion.php'; // Asegúrate de que este archivo esté incluido
+require_once 'configuracion/conexion.php'; 
 require_once 'clases/Tarea.php';
 
 $conexion = new Conexion(); // Crear una instancia de la clase Conexion
