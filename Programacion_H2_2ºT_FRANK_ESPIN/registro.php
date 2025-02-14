@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'configuracion/conexion.php'; // Asegúrate de que este archivo esté incluido
+require_once 'configuracion/conexion.php'; 
 require_once 'clases/Usuario.php';
 
 $conexion = new Conexion(); // Crear una instancia de la clase Conexion
