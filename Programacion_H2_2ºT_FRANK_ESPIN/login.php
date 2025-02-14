@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'configuracion/conexion.php'; // Asegúrate de que este archivo esté incluido
+require_once 'configuracion/conexion.php'; 
 require_once 'clases/Usuario.php';
 
 $conexion = new Conexion(); // Crear una instancia de la clase Conexion
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Intentar iniciar sesión
+    // iniciar sesión
     if ($usuario->login($email, $password)) {
         // Redirigir a la página de tareas o dashboard
         header('Location: dashboard.php');
